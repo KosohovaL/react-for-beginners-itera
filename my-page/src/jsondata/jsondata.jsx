@@ -3,8 +3,8 @@ import React from "react";
 function JsonDataDisplay(props) {
     return (
         <tr>
-            <td>{props.surname}</td>
-            <td>{props.name}</td>
+            <td>{props.data.surname}</td>
+            <td>{props.data.name}</td>
         </tr>
     )
 }

@@ -6,7 +6,7 @@ function DisplayData() {
     const GetData = JsonData.map(
         (myinfo) => {
             return (
-                <JsonDataDisplay name={myinfo.name} surname={myinfo.surname} />
+                < JsonDataDisplay data={myinfo} />
             )
         }
     )
@@ -23,7 +23,6 @@ function DisplayData() {
                     {GetData}
                 </tbody>
             </table>
-
         </div>
     )
 }
