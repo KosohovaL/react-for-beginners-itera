@@ -1,10 +1,11 @@
 import React from "react";
 
 function JsonDataDisplay(props) {
+    const { surname, name } = props.data
     return (
         <tr>
-            <td>{props.data.surname}</td>
-            <td>{props.data.name}</td>
+            <td>{surname}</td>
+            <td>{name}</td>
         </tr>
     )
 }
