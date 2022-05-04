@@ -6,7 +6,7 @@ function DisplayData() {
     const GetData = JsonData.map(
         (myinfo) => {
             return (
-                < JsonDataDisplay data={myinfo} />
+                < JsonDataDisplay key={myinfo.id} data={myinfo} />
             )
         }
     )
