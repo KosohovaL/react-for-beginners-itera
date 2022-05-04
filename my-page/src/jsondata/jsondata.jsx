@@ -1,32 +1,11 @@
 import React from "react";
-import JsonData from './data.json';
 
-function JsonDataDisplay() {
-    const DisplayData = JsonData.map(
-        (myinfo) => {
-            return (
-                <tr>
-                    <td>{myinfo.surname}</td>
-                    <td>{myinfo.name}</td>
-                </tr>
-            )
-        }
-    )
+function JsonDataDisplay(props) {
     return (
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Surname</th>
-                        <th>Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {DisplayData}
-                </tbody>
-            </table>
-
-        </div>
+        <tr>
+            <td>{props.surname}</td>
+            <td>{props.name}</td>
+        </tr>
     )
 }
 export default JsonDataDisplay;

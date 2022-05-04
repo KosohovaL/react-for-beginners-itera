@@ -1,5 +1,5 @@
 import React from 'react';
-import JsonDataDisplay from './jsondata/jsondata';
+import DisplayData from './jsondata/DisplayData';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Hello! Json data:</p>
-        <JsonDataDisplay />
+        <DisplayData />
       </header>
     </div>
   );
