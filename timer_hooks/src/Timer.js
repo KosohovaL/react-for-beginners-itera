@@ -15,7 +15,7 @@ const Timer = () => {
         }, 1000)
     }
 
-    function updateTimer() {
+    const updateTimer = () => {
         setTimer(new Date(timer.setSeconds(timer.getSeconds() + 1)))
     }
 
@@ -30,8 +30,8 @@ const Timer = () => {
                 <div>{!running ? 'My React timer' : 'Running'}</div>
             </header>
             <h2>{timer.toLocaleTimeString()}</h2>
-            <button onClick={startTimer}>Start</button>
-            <button onClick={stopTimer}>Stop</button>
+            <button type='button' onClick={startTimer}>Start</button>
+            <button type='button' onClick={stopTimer}>Stop</button>
         </div>
     )
 
